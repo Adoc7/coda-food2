@@ -1,0 +1,33 @@
+<template name="postPageCommande">
+
+    <div class="deb">
+        <!--{{#each pizzas}}-->
+        {{#each PizzasList}}
+
+        <div class="conteneur_prodPi">
+
+            <img src="{{image}}" class="prod"/>
+            <div class="pizza" >
+                <!--<br>-->
+                <b>{{name}}</b> </div>
+            <div class="ingredPi"> Ingrédients :  {{description}}</div>
+            <div class="prix" >
+                Prix : {{price}} euros</div>
+            <span>{{> compteur1}}   </span>
+        </div>
+        <br>
+        {{/each}}
+
+    </div>
+
+
+</template>
+
+<!--<template name="pizzas">-->
+    <!--<label class="control-label" for="url">PIZZAS</label>-->
+    <!--<div class="produits">-->
+        <!--{{> PizzasList}}-->
+    <!--</div>-->
+
+    <!--<hr>-->
+<!--</template>-->

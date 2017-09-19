@@ -1,0 +1,31 @@
+<template name="PostsList">
+    <!--<div class="deb1">-->
+    <div>
+
+        {{#each posts}}
+        <div class="conteneur_home">
+            <div class="TitreHome">
+            <b>{{name}}</b>
+            </div>
+            <br>
+            <img src="{{image}}" class="prodHome"/>
+            <br>
+            <span class="bouton_commande">
+            <a href="{{pathFor 'postPageCommande'}}">COMMANDER</a>
+            </span>
+        </div>
+        <br>
+        {{/each}}
+
+    </div>
+
+</template>
+
+<!--<template name="posts">-->
+    <!--<label class="control-label" for="url">PIZZAS</label>-->
+    <!--<div class="produits">-->
+        <!--{{> home}}-->
+    <!--</div>-->
+
+    <!--<hr>-->
+<!--</template>-->
